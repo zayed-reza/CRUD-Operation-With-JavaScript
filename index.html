@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <div class="S_Document"><h1>Registration</h1></div>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label style="color: aliceblue; font-size:20px;" >Student Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label style="color: aliceblue; font-size:20px;">Student ID*</label>
+                        <input type="text" name="studentID" id="studentID" required>
+                    </div>
+                    <div>
+                        <label style="color: aliceblue; font-size:20px;">Email*</label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label style="color: aliceblue; font-size:20px;">Phone*</label>
+                        <input type="text" name="phone" id="phone" required>
+                    </div>
+                    <div>
+                        <label style="color: aliceblue; font-size:20px;">Department</label>
+                        <input type="text" name="department" id="department">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            
+        </tr>
+    </table>
+    <br>
+    <div class="S_Document"><h1>Student Document</h1></div>
+    <td>
+        <table class="list" id="studentList">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Department</th>
+                    <th>Edit </th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </td>
+    <script src="script.js"></script>
+
+    
+</body>
+
+</html>

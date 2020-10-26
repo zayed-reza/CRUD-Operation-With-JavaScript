@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD operation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="S_Document"><h1>Student Document</h1></div>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault()" autocomplete="off" action="">
+                    <div>
+                        <label style="color: aliceblue; font-size:20px;"for="">Student Name</label>
+                        <input type="text" name="studentName" id="studentName">
+
+                    </div>
+                    <div>
+                        <label style="color: aliceblue; font-size:20px;">Student ID</label>
+                        <input type="text" name="studentID" id="studentID">
+
+                    </div>
+                    <div>
+                        <label style="color: aliceblue; font-size:20px;">Email</label>
+                        <input type="text" name="email" id="email">
+
+                    </div>
+                    <div>
+                        <label style="color: aliceblue; font-size:20px;">Phone</label>
+                        <input type="text" name="phone" id="phone">
+
+                    </div>
+                    <div>
+                        <label style="color: aliceblue; font-size:20px; ">Department</label>
+                        <input type="text" name="department" id="department">
+
+                    </div>
+                    <div class="form-action-button">
+                        <input type="submit" value="Submit">
+                    </div>
+                
+                    
+             
+                </form>
+            <td>
+                    <table class="list" id="studentlist">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Student ID</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Department</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+    
+                    </table>
+            </td>
+           
+        </tr>
+    </table>
+    <script src="script.js"></script>
+
+</body>
+</html>
